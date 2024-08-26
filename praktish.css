@@ -1,0 +1,230 @@
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+input, textarea, button {
+font-family: inherit;
+padding: 0;
+}
+
+label {
+cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+fieldset {
+border: none;
+margin: 0;
+padding: 0;
+}
+
+legend {
+display: block;
+margin: 0;
+padding: 0;
+border: none;
+}
+
+.none {
+display: none !important;
+}
+
+a {
+text-decoration: none;
+display: inline-block;
+}
+
+body {
+margin: 0;
+font-family: "Montserrat", sans-serif;
+font-size: 16px;
+color: black;
+color: var(--text-color);
+}
+
+body, html {
+height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;    /*  убирает скролл */
+    overflow: hidden;
+
+                         /* прибить подвал к низу */
+    display: flex;
+    flex-direction: column;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+
+.container {
+    max-width: 1076px;    /* 1046 */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+
+.main {
+    flex: 1 0 auto;                     /*  прибить подвал к низу  */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ---------------------------------------------- МОЙ КОД ------------------------------------- */
+
+/*  
+.services {
+
+    padding: 90px;
+}
+
+.services__row-cards {
+
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 0 -15px -30px -15px;
+}
+.services__card {
+
+    flex: 0 1 33.3333%;
+    margin: 0 15px 30px 15px;
+}
+.services-card {
+
+    padding: 35px 40px;
+    background-color: #fff;
+    box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+    border: 2px solid black;
+}
+
+
+.services-card > *:not(:last-child) {
+
+margin-bottom: 10px;
+}
+
+.services-card__title {
+
+font-weight: 700;
+font-size: 24px;
+line-height: 133%;
+letter-spacing: 0em;
+}
+.services-card__text {
+
+font-weight: 500;
+font-size: 14px;
+line-height: 143%;
+letter-spacing: 0.01em;
+color: #737373;
+}
+
+
+@media (max-width: 830px) {
+
+    .services__row-cards {
+
+         flex-wrap: wrap; 
+    }
+
+    .services__card {
+
+         flex: 0 1 50%; 
+    }
+}
+
+
+*/
+
+
+/* ---------------------------------------------- ЕГО КОД ------------------------------------- */
+
+.page__services {
+}
+.services {
+
+    padding: 80px 0px;
+}
+.container {
+}
+.services__body {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+.services__column {
+
+    padding: 0px 15px;           /*  почему отступ не через margin? */
+    flex: 0 1 33.3333%;
+}
+.services__card {                /* почему свойства ниже заданы элементу, а не блоку? */
+
+    height: 100%;
+
+    padding: 35px 40px;
+    background-color: #fff;
+    box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+    border: 2px solid black;
+}
+.services-card {
+}
+
+.services-card > *:not(:last-child) {
+
+margin-bottom: 10px;
+}
+
+.services-card__title {
+
+font-weight: 700;
+font-size: 24px;
+line-height: 133%;
+letter-spacing: 0em;
+}
+.services-card__text {
+
+font-weight: 500;
+font-size: 14px;
+line-height: 143%;
+letter-spacing: 0.01em;
+color: #737373;
+}
+    

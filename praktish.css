@@ -109,7 +109,7 @@ height: 100%;
 
  /* ---------------------------------------------- МОЙ КОД ------------------------------------- */
 
-/*  
+  
 .services {
 
     padding: 90px;
@@ -119,12 +119,11 @@ height: 100%;
 
     display: flex;
     flex-wrap: wrap; 
-    margin: 0 -15px -30px -15px;
 }
 .services__card {
 
-    flex: 0 1 33.3333%;
-    margin: 0 15px 30px 15px;
+    width: 33.333%;
+    gap: 30px;
 }
 .services-card {
 
@@ -171,11 +170,11 @@ color: #737373;
 }
 
 
-*/
+
 
 
 /* ---------------------------------------------- ЕГО КОД ------------------------------------- */
-
+/* 
 .page__services {
 }
 .services {
@@ -192,10 +191,10 @@ color: #737373;
 }
 .services__column {
 
-    padding: 0px 15px;           /*  почему отступ не через margin? */
+    padding: 0px 15px;           
     flex: 0 1 33.3333%;
 }
-.services__card {                /* почему свойства ниже заданы элементу, а не блоку? */
+.services__card {                
 
     height: 100%;
 
@@ -228,3 +227,17 @@ letter-spacing: 0.01em;
 color: #737373;
 }
     
+
+@media (max-width: 830px) {
+
+    .services__body {
+
+         flex-wrap: wrap; 
+    }
+
+    .services__card {
+
+         flex: 0 1 50%; 
+    }
+}
+ */
